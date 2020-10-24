@@ -4,7 +4,7 @@ class SignInPage extends Component{
     render(){
         return(
             <div style={{margin:'120px'}}>
-                SignIn Page
+                <h1>SignIn Page</h1>
             </div>
         )
     }

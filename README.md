@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+clone the repo to your loacal
+go to the project roo dir that is mycart:
+
+run the command:
+### npm install
+
+To run the App
+### `yarn start`
+
+to test 
+### `yarn test`
+
 ## Available Scripts
 
 In the project directory, you can run:
