@@ -1,0 +1,96 @@
+.productCard {
+  height: 100vh;
+  border-radius: 0.8rem;
+  padding: 0px 0px;
+  border: 0.1rem solid wheat;
+  text-align: center;
+  margin: 0.7rem 0;
+  display: flex;
+  flex-direction: row;
+ 
+  a {
+    text-decoration: none;
+  }
+  .rating {
+    // width: 50px;
+    width: fit-content;
+    display: flex;
+    // justify-content: space-evenly;
+    padding: 4px 6px;
+    align-items: center;
+  }
+  .restaurantName {
+    margin-top: 1.2rem;
+  }
+  .image {
+    height: 50%;
+    width: 90%;
+    border-radius: 0.2rem 0.2rem 0 0;
+    margin: 1rem 1rem 0rem 1rem;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .container1 {
+    padding: 0rem 1.5rem;
+    div {
+      margin-bottom: 0.3rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    
+    h3 {
+      font-size: 18px;
+      padding-bottom: 0.1rem;
+      color: black;
+      font-weight: 500;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    h4 {
+      font-size: 1rem;
+      padding-bottom: 0.1rem;
+      padding-left: 0.6rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p {
+      font-size: 1rem;
+      padding: 0.1rem 0;
+      text-align: center;
+      color: black;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .btnDiv{
+      .cardbtn{
+        background-color: #6a3cd4; /* Green */
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  .productCard {
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .productCard {
+    flex-direction: column;
+  }
+}

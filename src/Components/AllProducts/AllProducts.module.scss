@@ -1,0 +1,89 @@
+.main{
+    margin-top: 4.1rem !important;
+    .filterhead {
+        top: 50px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+        .toggleMenu {
+            display: block;
+            margin: 6px 10px;
+            height: 35px;
+            border-radius: 10rem;
+            width: 35px;
+            outline: none;
+            z-index: 1;
+            // background-color: rgba(64, 194, 133, 0.693);
+            border-color: rgba(64, 194, 133, 0.693);
+            @media only screen and(max-width: 600px) {
+                display: block;
+            }
+        }
+        span {
+            letter-spacing: 0.1rem;
+            color: black;
+            margin: auto;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            background: white;
+          }
+
+        .filter[type="text"] {
+        // display: none;
+        padding: 4px;
+        border-radius: 5px;
+        // font-size: 1.1rem;
+        border-color: #ff5e5b;
+        text-align: center;
+        // text-transform: uppercase;
+        // width: 30rem;
+        margin: 1rem 1rem;
+        background: white;
+        // border: none;
+        }
+
+        .topPick {
+        font-size: 2rem;
+        // text-align: right;
+        color: #03045e;
+        // text-align: center;
+        width: 30rem;
+        }
+        
+        .topPick b {
+        font-weight: 510;
+        font-family: "Times New Roman", Times, serif;
+        }
+    }
+    .productCards{
+        width: 100%;
+        margin-left: auto;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+      
+    @media only screen and(max-width: 600px) {
+        .main {
+          margin-top: 6.1rem !important;
+        }
+        .filter[type="text"] {
+            font-size: 0.8rem;
+            margin: 0.5rem 0rem;
+            width: 35%;
+        }
+        .productCards{
+            width: 90%;
+            margin: auto;
+            margin-top: 150px;
+        }
+    }
+}

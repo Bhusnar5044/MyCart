@@ -1,0 +1,125 @@
+.sideBar {
+    position: fixed;
+    top: 100px;
+    height: 85%;
+    width: 80%;
+    border-right: 1px solid;
+    border-radius: 0;
+    border-color: rgba(64, 194, 133, 0.693);
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s ease;
+    z-index: 1;
+    
+    .main{
+      margin-top: 8px;
+      margin: auto;
+      width: 90%;
+      justify-content: center;
+      .fhead{
+        width: 100%;
+        hr{
+          width: 100%;
+          height: 2px;
+          border-color: lightcoral;
+        }
+        .ftitle{
+          color: navy;
+          // margin-left:;
+          float: left;
+          font-weight: 500;
+          font-size: 1.5rem;
+          margin-bottom: 1rem !important;
+          text-decoration: none;
+        }
+      }
+     
+      .category{
+        width: 100%;
+        height: 72vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        overflow: scroll;
+        overflow-x: hidden;
+      
+        .cat{
+          color: navy;
+          margin-top: 2px;
+          font-weight: 500;
+          font-size: 1.2rem;
+          margin-bottom: 0.3rem !important;
+          text-decoration: none;
+          }
+          .cat:hover{
+            color: lightcoral;
+          }
+
+        .ul{
+          // list-style: none;
+          text-align: justify;
+          // font-size: 1rem;
+          li{
+            margin: 0.8rem 0;
+            padding-left: 10px;
+            a{
+              color: navy;
+              margin-top: 2px;
+              font-weight: 500;
+              font-size: 0.8rem;
+              margin-bottom: 0.1rem !important;
+              text-decoration: none;
+            }
+            a:hover{
+              color: lightcoral;
+            }
+            .suba{
+              font-size: 0.75rem;
+            }
+            
+          }
+        }   
+      }
+    
+  
+      .inputs {
+      margin-right: 8px;
+      color: blue;
+      }
+  
+      .cuisines li:first {
+      margin-top: 1rem;
+      }
+      
+      .filter[type="text"] {
+      padding: 1px;
+      width: 100%;
+      // margin: auto;
+      background: white;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 14px;
+      border-color: lightcoral;
+      text-transform: uppercase;
+      }
+
+    }
+  }
+  .category::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 10px;
+  }
+  .category::-webkit-scrollbar-track {
+    border: 5px solid #292943 !important;
+    box-shadow: inset0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  }
+  .category::-webkit-scrollbar-thumb {
+    background-color: lightcoral;
+  }
+  .category::-webkit-scrollbar-thumb:hover {
+    background: palevioletred;
+  }
+  
+  
+  
