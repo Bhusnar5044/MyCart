@@ -20,7 +20,7 @@ function StripeButton({
         <StripeCheckout
           className={Style.stripe_button}
           label="Go for Payment"
-          name="_Food4Foodie_"
+          name="_MyCart_"
           billingAddress
           shippingAddress
           allowRememberMe
