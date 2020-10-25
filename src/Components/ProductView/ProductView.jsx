@@ -32,8 +32,9 @@ const ProductView = ({ FetchedData}) => {
   }
 
   return (
-    <div className={Style.productCard}> 
-      <div>
+    <div
+      className={Style.productCard}
+    >
         <div
           className={Style.image}
           style={{ backgroundImage: `url(${FetchedData.image})` }}
@@ -52,24 +53,18 @@ const ProductView = ({ FetchedData}) => {
             </span>
             .
             <span>
-              <b>{"Available"}</b>
+              <b>Available</b>
             </span>
           </div>
+          <div>
+            <b>{description}</b>
+          </div>
 
+          <div className={Style.btnDiv}>
+            <button className={Style.cardbtn} onClick={() => {add_Item(item);addCart()}}>Add To Cart</button>
+            <button className={Style.cardbtn}>Buy</button>
+          </div>
         </div>
-      </div>
-
-      <div>
-        <div>
-          <b>{description}</b>
-        </div>
-
-        <div className={Style.btnDiv}>
-          <button className={Style.cardbtn} onClick={() => {add_Item(item);addCart()}}>Add To Cart</button>
-          <button className={Style.cardbtn} >Buy</button>
-        </div>
-      </div>
-      
     </div>
   );
 };
@@ -87,4 +82,3 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(ProductView) 
-

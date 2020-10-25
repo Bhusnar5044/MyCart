@@ -17,7 +17,6 @@ library.add(faSlidersH, faHouseUser, faUserLock,faRupeeSign,faMinus,faPlus,faTra
 function App() {
   return (
     <div className="App">
-      <h1>Products</h1>
       <Router>
         <Navbar/>
       <Switch>
