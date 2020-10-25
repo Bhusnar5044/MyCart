@@ -24,8 +24,8 @@ configure({ adapter: new Adapter() });
 // describe("SignIn Page Testing",()=>{
 //   test('render the title', () => {
 //     const wrapper = shallow(<SignInPage/>);
-//     console.log(wrapper.debug());
-//     expect(wrapper.find("h1").text()).toContain('SignIn Page');
+//     console.log(wrapper.find(".toggle_btn").at(1).text());
+//     expect(wrapper.find(".toggle_btn").at(1).text()).toContain('Sign In');
 //   });
 // });
 
@@ -84,44 +84,45 @@ describe('AxiosReducer reducer', () => {
 
 // test redux connected Component
 describe('My Connected React-Redux Component', () => {
-  // let store;
+  let store;
+  let dispatch;
   // let component
-  // beforeEach(() => {
-  //   store = mockStore({
-  //     myState: 'sample text',
-  //   });
-
-  //   component = renderer.create(
-  //     <Provider store={store}>
-  //       <ProductView/>
-  //     </Provider>
-  //   );
-
-  //   store.dispatch = jest.fn();
-
-  // });
- 
-  // it('should render with given state from Redux store', () => {
-  //   expect(component.toJSON()).toMatchSnapshot();
-  // });
- 
-  // it('should dispatch an action on button click', () => {
-  //   renderer.act(() => {
-  //     component.root.findByType('button').props.onClick();
-  //     console.log(component.root.text())
-  //   });
- 
-  //   // expect(store.dispatch).toHaveBeenCalledTimes(1);
-  //   // expect(store.dispatch).toHaveBeenCalledWith(
-  //   //   actions.add_Item({ payload: {"id":0,"name":"product","price":200} })
-  //   // );
-
-  // });
-
-  it('Renders the connected app with initialState', () => {
-    render(<SignInPage/> , { initialState: { xPosition: 'Redux User' } })
+  beforeEach(() => {
+    store = mockStore({
+      xPosition: '-2000',
+    });
   
-    expect(screen.getByText(/Redux User/i)).toBeInTheDocument()
-  })
+    dispatch = jest.fn();
+    store.dispatch = dispatch;
+
+  });
+ 
+  it('should render with given state from Redux store', () => {
+    const wrapper = shallow(
+      <Provider store={store}>
+          <FilterBar />
+      </Provider>
+      );
+    expect(wrapper).toMatchSnapshot();
+  });
+ 
+  // it('should dispatch both', () => {
+
+  //   const wrapper = shallow(
+  //       <Provider store={store}>
+  //           <FilterBar/>
+  //       </Provider>
+  //       );
+        
+      
+  //       shallow.act(() => {
+  //        wrapper.find('.cat').props.onClick();
+  //       });
+  // //   // expect(store.dispatch).toHaveBeenCalledTimes(1);
+  //     expect(dispatch).toHaveBeenCalledWith(
+  //       actions.setXPosition({ payload:0 })
+  //     );
+        
+  // });
 
 });
