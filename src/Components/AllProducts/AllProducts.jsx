@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import {setXPosition,fetchProductList,fetchProductInfo,setImage,add_Item} from '../../Redux'
 import ProductCard from '../ProductCard/ProductCard'
 import { useHistory } from "react-router";
+import LoadingIndicator from '../LoadingSpinner/LoadingIndicator'
 
 
 const AllProducts = ({uiData,FetchedData,fetchProductList,setImage,add_Item,fetchProductInfo,setXPosition},ref) => {
@@ -66,12 +67,14 @@ const AllProducts = ({uiData,FetchedData,fetchProductList,setImage,add_Item,fetc
             </div>
             
             <div className={Style.productCards}>
-            {/* <Counter/> */}
-                {FetchedData &&
+            { FetchedData.loading ? <LoadingIndicator/>: 
+                (FetchedData &&
                 FetchedData.productList &&
                 filteredProducts.map(data => (
                     <ProductCard key={data.defaultArticle.code} info={data} handleClick={handleClick} />
-                ))}
+                )))
+            }
+                
             </div>
         </div>
     )
