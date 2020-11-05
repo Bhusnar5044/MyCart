@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/MyCart/static/css/main.dc574072.chunk.css",
+    "main.js": "/MyCart/static/js/main.a3ab473c.chunk.js",
+    "main.js.map": "/MyCart/static/js/main.a3ab473c.chunk.js.map",
+    "runtime-main.js": "/MyCart/static/js/runtime-main.6764e873.js",
+    "runtime-main.js.map": "/MyCart/static/js/runtime-main.6764e873.js.map",
+    "static/js/2.7659e39e.chunk.js": "/MyCart/static/js/2.7659e39e.chunk.js",
+    "static/js/2.7659e39e.chunk.js.map": "/MyCart/static/js/2.7659e39e.chunk.js.map",
+    "index.html": "/MyCart/index.html",
+    "precache-manifest.c30dbe32f9183762d274baa04b64b770.js": "/MyCart/precache-manifest.c30dbe32f9183762d274baa04b64b770.js",
+    "service-worker.js": "/MyCart/service-worker.js",
+    "static/css/main.dc574072.chunk.css.map": "/MyCart/static/css/main.dc574072.chunk.css.map",
+    "static/js/2.7659e39e.chunk.js.LICENSE.txt": "/MyCart/static/js/2.7659e39e.chunk.js.LICENSE.txt",
+    "static/media/404.jpg": "/MyCart/static/media/404.d0d4b209.jpg",
+    "static/media/empty.png": "/MyCart/static/media/empty.3dcd56f4.png",
+    "static/media/logo.svg": "/MyCart/static/media/logo.ee7cd8ed.svg",
+    "static/media/user.png": "/MyCart/static/media/user.27dd9c0a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6764e873.js",
+    "static/js/2.7659e39e.chunk.js",
+    "static/css/main.dc574072.chunk.css",
+    "static/js/main.a3ab473c.chunk.js"
+  ]
+}
